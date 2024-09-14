@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f0f8ff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.description {
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.action {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.valid {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.joke-card {
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+/* Ensuring the card heights are the same */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    flex-grow: 1; /* Allows the text to take up available space */
+}
+
+.btn {
+    margin-top: 10px;
+    align-self: flex-end; /* Aligns the button at the bottom */
+}
+
+
+/* For small screen (mobile) */
+@media (max-width: 576px) {
+    .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* For medium screen */
+@media (min-width: 768px) and (max-width: 992px) {
+    .col-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* For large screen */
+@media (min-width: 992px) {
+    .col-4 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
